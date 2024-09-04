@@ -1,0 +1,73 @@
+// Java Program to Implement 
+// Circular Resizable Array 
+public class CircularArray { 
+	private int[] array; 
+	private int size; 
+	private int head; 
+	private int tail; 
+
+	// Constructor 
+	public CircularArray(int capacity) { 
+		array = new int[capacity]; 
+		size = 0; 
+		head = 0; 
+		tail = 0; 
+	} 
+
+	// Enqueue (Add Element) Method 
+	public void enqueue(int element) { 
+		if (size == array.length) { 
+			resizeArray(); 
+		} 
+		array[tail] = element; 
+		tail = (tail + 1) % array.length; 
+		size++; 
+	} 
+
+	// Dequeue (Remove Element) Method 
+	public int dequeue() { 
+		if (isEmpty()) { 
+			throw new IllegalStateException("Circular array is empty"); 
+		} 
+		int removedElement = array[head]; 
+		head = (head + 1) % array.length; 
+		size--; 
+		return removedElement; 
+	} 
+
+	// ResizeArray Method 
+	private void resizeArray() { 
+		int newCapacity = array.length * 2; 
+		int[] newArray = new int[newCapacity]; 
+		for (int i = 0; i < size; i++) { 
+			newArray[i] = array[(head + i) % array.length]; 
+		} 
+		array = newArray; 
+		head = 0; 
+		tail = size; 
+	} 
+
+	// Check if CircularArray is empty 
+	public boolean isEmpty() { 
+		return size == 0; 
+	} 
+
+	// Main method for testing 
+	public static void main(String[] args) { 
+		CircularArray circularArray = new CircularArray(5); 
+
+		circularArray.enqueue(1); 
+		circularArray.enqueue(2); 
+		circularArray.enqueue(3); 
+		circularArray.enqueue(4); 
+		circularArray.enqueue(5); 
+
+		System.out.println("Dequeuing: " + circularArray.dequeue()); 
+		System.out.println("Dequeuing: " + circularArray.dequeue()); 
+
+		circularArray.enqueue(6); 
+		circularArray.enqueue(7); 
+
+		System.out.println("Dequeuing: " + circularArray.dequeue()); 
+	} 
+} 
