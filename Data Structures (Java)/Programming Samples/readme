@@ -1,1 +1,41 @@
+The "Programming Samples" sub repo has several data structures and order to be followed and the example prorgamming in each data strucutre is as follows:
 
+1. Array
+  - One Dimensional Array: Start by creating and understanding basic one-dimensional arrays.
+  - Two Dimensional Array: After mastering one-dimensional arrays, move to two-dimensional arrays for more complex data structures.
+  - InsertToArray: Learn how to insert elements into arrays once you understand the structure.
+  - DeleteArray: Understand how to remove elements from an array.
+  - SearchArray: Learn how to search for elements within arrays after knowing how to insert and delete.
+  - Circular Array: Explore circular arrays, which have elements that wrap around the end.
+  - Circular Resizable Array: Lastly, work with a circular resizable array, which combines the concepts of a circular array with dynamic resizing.
+
+2. ArrayList
+  - AddElementsToArrayList: Start by learning how to add elements to the ArrayList.
+  - AccessElementsFromArrayList: Once elements are added, understand how to access them.
+  - ChangeElementArrayList: Learn how to modify elements within the ArrayList.
+  - IterateArrayList: After learning how to add, access, and change elements, explore how to iterate through the ArrayList.
+  - RemoveElementsArrayList: Learn how to remove elements after adding, modifying, and iterating through them.
+  - SortArrayList: Sorting an ArrayList (general).
+  - SortArrayListNumbers: Sorting an ArrayList specifically for numbers.
+  - ArrayListToArray: Convert the ArrayList to an array once the operations are complete.
+
+3. Linked List
+  - CreateLinkedList: Start by creating the linked list structure.
+  - UpdateLinkedList: Modify or update the linked list as necessary after its creation.
+  - LinkedListSize: Check the size of the linked list at any point.
+  - GetFromLinkedList: Retrieve data from specific nodes in the list.
+  - LinkedListToArray: Convert the linked list to an array if you need a different format.
+  - RemoveFirst: If you want to remove the first node from the list.
+  - RemoveLast: To remove the last node in the list.
+  - RemoveFromLinkedList: To remove a specific node, likely by value or position.
+
+4. Doubly LinkedList
+  - DoublyLinkedListInsertBeginning: Start by learning how to insert elements at the beginning of a doubly linked list to establish its structure.
+  - DoublyLinkedListEndBeginning: Follow by learning to insert at the end of the list for completeness in inserting nodes.
+  - DoublyLinkedListInsertSpecific: Next, understand how to insert elements at specific positions in the list.
+  - DoublyLinkedListTraversal: Learn to traverse the list after mastering insertion, which helps in visualizing the structure.
+  - DoublyLinkedListFindLength: Understand how to calculate the length of the list to keep track of the number of nodes.
+  - DoublyLinkedListSearch: Learn how to search for elements within the list once you can traverse and manage the size.
+  - DoublyLinkedListDeletionBeginning: Start deletion operations with removing the first node.
+  - DoublyLinkedListEndBeginning: Learn to delete the last node after understanding how to delete from the beginning.
+  - DoublyLinkedListDeletionSpecific: Lastly, understand how to remove nodes at specific positions, completing your knowledge of deletion operations.
