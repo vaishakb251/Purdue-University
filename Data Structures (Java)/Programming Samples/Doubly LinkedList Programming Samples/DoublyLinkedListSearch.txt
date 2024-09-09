@@ -1,0 +1,56 @@
+// Java Code for Searching in
+// Doubly Linked List
+
+public class GfG {
+
+    // Function to find the position of an integer
+    static int search(Node head, int x) {
+        Node curr = head;
+        int pos = 0;
+
+        // Traverse the doubly linked list
+        while (curr != null && curr.data != x) {
+            pos++;
+            curr = curr.next;
+        }
+
+        // If the integer is not present in the list
+        if (curr == null || curr.data != x)
+            return -1;
+
+        // If the integer is present in the list
+        return (pos + 1);
+    }
+
+    public static void main(String[] args) {
+        Node head = null;
+        int x = 8;
+
+        // Create a hard-coded linked list:
+        // 18 <=> 15 <=> 8 <=> 9 <=> 14
+        head = new Node(18);
+        head.next = new Node(15);
+        head.next.prev = head;
+        head.next.next = new Node(8);
+        head.next.next.prev = head.next;
+        head.next.next.next = new Node(9);
+        head.next.next.next.prev = head.next.next;
+        head.next.next.next.next = new Node(14);
+        head.next.next.next.next.prev = 
+            head.next.next.next;
+
+        System.out.print(search(head, x));
+    }
+}
+
+class Node {
+    int data;
+    Node next;
+    Node prev;
+
+    Node(int new_data) {
+        data = new_data;
+        next = null;
+        prev = null;
+    }
+}
