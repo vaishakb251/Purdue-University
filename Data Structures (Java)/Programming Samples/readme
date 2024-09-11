@@ -39,3 +39,10 @@ The "Programming Samples" sub repo has several data structures and order to be f
   - DoublyLinkedListDeletionBeginning: Start deletion operations with removing the first node.
   - DoublyLinkedListEndBeginning: Learn to delete the last node after understanding how to delete from the beginning.
   - DoublyLinkedListDeletionSpecific: Lastly, understand how to remove nodes at specific positions, completing your knowledge of deletion operations.
+
+5. Hash Map and Hash Set
+  - 
+  - 
+  - 
+  - 
+  - 
