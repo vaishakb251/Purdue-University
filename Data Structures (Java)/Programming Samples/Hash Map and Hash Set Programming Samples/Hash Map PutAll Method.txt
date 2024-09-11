@@ -1,0 +1,18 @@
+import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    HashMap<String, String> capitalCities = new HashMap<String, String>();
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    
+    HashMap<String, String> moreCities = new HashMap<String, String>();
+    moreCities.put("Canada", "Ottawa");
+    moreCities.put("Japan", "Tokyo");
+    
+    capitalCities.putAll(moreCities);
+    System.out.println(capitalCities);
+  }
+}

@@ -1,0 +1,30 @@
+
+// Java program to demonstrate 
+// compute(Key, BiFunction) method. 
+  
+import java.util.*; 
+  
+public class GFG { 
+  
+    // Main method 
+    public static void main(String[] args) 
+    { 
+  
+        // Create a Map and add some values 
+        Map<String, String> map = new HashMap<>(); 
+        map.put("Name", "Taylor"); 
+        map.put("Address", "New York"); 
+  
+        // Print the map 
+        System.out.println("Map: " + map); 
+  
+        // remap the values using compute() method 
+        map.compute("Name", (key, val) 
+                                -> val.concat(" Swift")); 
+        map.compute("Address", (key, val) 
+                                   -> val.concat(" Madison Square")); 
+  
+        // print new mapping 
+        System.out.println("New Map: " + map); 
+    } 
+} 
