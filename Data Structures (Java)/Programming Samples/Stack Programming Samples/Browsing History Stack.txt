@@ -1,0 +1,115 @@
+// Java Implementation of the approach
+import java.io.*;
+import java.util.*;
+
+class GFG {
+
+  static class BrowserHistory {
+    Stack<String> backStack = new Stack<>();
+    Stack<String> forwardStack = new Stack<>();
+
+    // Constructor to initialize object with
+    // homepage
+    BrowserHistory(String homepage)
+    {
+      backStack.push(homepage);
+    }
+
+    // Visit current url
+    void visit(String url)
+    {
+      while (!forwardStack.isEmpty()) {
+        forwardStack.pop();
+      }
+      backStack.push(url);
+    }
+
+    // 'steps' move backward in history and
+    // return current page
+    String back(int steps)
+    {
+      while (backStack.size() > 1 && steps-- > 0) {
+        forwardStack.push(backStack.peek());
+        backStack.pop();
+      }
+      return backStack.peek();
+    }
+
+    // 'steps' move forward and return
+    // current page
+    String forward(int steps)
+    {
+      while (!forwardStack.isEmpty() && steps-- > 0) {
+        backStack.push(forwardStack.peek());
+        forwardStack.pop();
+      }
+      return backStack.peek();
+    }
+  }
+
+  public static void main(String[] args)
+  {
+    // Input case :
+    String homepage = "gfg.org";
+
+    // Initialise the object of Browser History
+    BrowserHistory obj = new BrowserHistory(homepage);
+
+    String url = "google.com";
+    obj.visit(url);
+
+    url = "facebook.com";
+    obj.visit(url);
+
+    url = "youtube.com";
+    obj.visit(url);
+
+    System.out.println(obj.back(1));
+    System.out.println(obj.back(1));
+    System.out.println(obj.forward(1));
+    obj.visit("linkedin.com");
+    System.out.println(obj.forward(2));
+    System.out.println(obj.back(2));
+    System.out.println(obj.back(7));
+  }
+}
+
+
+    Input: 
+    homepage = “geeksforgeeks.org”
+    visit(“amazon.com”);
+    back(2);
+    Output: geeksforgeeks.org
+    Explanation:  We need to move 2 steps back but since only 1 step is available we would land up at the homepage, i.e., geeksforgeeks.org
+
+    Input:
+    homepage = “gfg.org”
+    visit(“google.com”);
+    visit(“facebook.com”);
+    visit(“youtube.com”);
+    back(1);
+    back(1);
+    forward(1);
+    visit(“linkedin.com”);
+    forward(2);
+    back(2);
+    back(7);
+    Output:
+    facebook.com
+    google.com
+    facebook.com
+    linkedin.com
+    google.com
+    gfg.org
+    Explanation:
+    visit(“google.com”) :  We are at google.com 
+    visit(“facebook.com”): Now, we are at facebook.com
+    visit(“youtube.com”): We are at youtube.com
+    back(1):  We would land up at facebook.com, if we move one step back.
+    back(1):  Moving one step back, takes us to google.com 
+    forward(1): Moving a step forward we would be at facebook.com
+    visit(“linkedin.com”):  We are at linkedin.com
+    forward(2): We are still at linkedin. since visiting clear the forward history . When we are the current URL, there is no URL to move forward to. 
+    back(2): Moving two steps back, takes us to google.com
+    back(7):  We need to move 7 steps back, but only 1 url is available. Therefore we would return gfg.org. 
+
