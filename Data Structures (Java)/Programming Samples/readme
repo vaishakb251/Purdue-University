@@ -41,8 +41,23 @@ The "Programming Samples" sub repo has several data structures and order to be f
   - DoublyLinkedListDeletionSpecific: Lastly, understand how to remove nodes at specific positions, completing your knowledge of deletion operations.
 
 5. Hash Map and Hash Set
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Create Hash Map: Learn how to create and initialize a HashMap.
+  - Hash Map PutAll Method: Understand how to add multiple elements to the HashMap in one go.
+  - Hash Map PutIfAbsent Method: Learn how to insert elements only if they are not already present.
+  - Hash Map GetOrDefault: Learn how to retrieve values safely, with a default return value if the key doesn’t exist.
+  - Hash Map Remove Element: Understand how to remove elements from the HashMap.
+  - Hash Map Clear Elements: Learn how to remove all elements from the HashMap.
+  - Hash Map Size: Learn how to check the number of key-value pairs in the HashMap.
+  - Hash Map Key Set: Learn how to retrieve all the keys from the HashMap.
+  - Hash Map Value Set: Learn how to retrieve all the values from the HashMap.
+  - Hash Map For Each Method: Learn how to iterate over the HashMap using forEach.
+  - Hash Map Compute ifAbsent: Learn how to compute values if a key is not already present.
+  - Hash Map Compute Method: Understand how to compute values based on existing key-value pairs.
+  - Hash Map Merge: Learn how to merge existing values in the map with new ones.
+  - Hash Map Replace Method: Learn how to replace values in the HashMap if a key is already present.
+  - Hash Map ReplaceAll Method: Learn how to replace all values based on some logic.
+  - Hash Set Add Elements: Start learning HashSets by understanding how to add elements.
+  - Hash Set Contains: Learn how to check if an element exists in a HashSet.
+  - Hash Set Data Type: Learn how to work with different data types in HashSets.
+  - Print Hash Map: Learn how to print the entire HashMap for debugging or verification.
+
