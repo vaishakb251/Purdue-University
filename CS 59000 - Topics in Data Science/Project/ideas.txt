@@ -1,0 +1,23 @@
+Predict whether a client will subscribe to a term deposit based on demographic and campaign features.
+
+Classify clients likely to respond positively to marketing calls using contact and personal data.
+
+Identify key features influencing term deposit subscription through feature importance analysis.
+
+Segment clients into high and low potential targets using clustering based on profile and past behavior.
+
+Detect patterns among clients with credit default history using classification.
+
+Predict housing loan ownership based on client demographics and financial behavior.
+
+Forecast personal loan acceptance using logistic regression on client features.
+
+Analyze how call duration affects term deposit subscription rates using regression.
+
+Classify the best contact communication method to maximize positive responses.
+
+Determine the optimal number of campaign contacts for successful subscription.
+
+Predict success of future marketing campaigns based on previous outcomes.
+
+Perform time-series trend analysis of subscription rates by month.
