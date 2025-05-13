@@ -1,0 +1,75 @@
+(* =============Tokens =========== *)
+
+(* 1) keywords *)
+
+double int long char bool  fun 
+
+if then else true false orelse andalso
+
+(* 2) operators and other *)
+
+(* assignment operator (right associative) *) =  +=  -=  *=  /=     
+(* arithmetic binary operator *) +   -   *    / (* double division *)    // (int division)   
+(* comparison *)  >  <  ==    !=
+(* unary operator *) - !
+ 
+
+(* 3) integer literal *)
+
+(* DecimalIntegerLiteral defined here  *)
+(* https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html#jls-DecimalIntegerLiteral  *)
+
+
+(* Examples of valid DecimalIntegerLiteral: *)
+0  
+1
+52
+5_2
+5_2L
+5_2l
+5__2
+5_21
+
+(* Examples of invalid DecimalIntegerLiteral: *) 
+00  (* leading zero *)
+01 (* leading zero *)
+0_52 (* leading zero *)
+_52 (* starts with underscore *)
+52_ (* end with underscore *)
+
+(* 4) double literal *)
+
+(* one or more digits.one or more digits without leading zero *)
+
+(* or  *)
+(* .one or more digits *)
+
+(* valid double: *)  0.2, 1.2, .2, 1.0, 0.0
+
+(* invalid double: *) 00.2, 1. 
+
+
+(* 5) char literal: single char inside *) " "
+
+
+(* 6) identifier *)
+(* a letter followed by sequence of digits or letter *)
+(* cannot be a keyword in 1) *)
+
+(* letter:  *) a-z, or A-Z
+
+(* digits:  *) 0-9
+
+(* 7) separators, one of  *)
+;  ,  (  )  { } 
+
+(*  8)  use "white space separates tokens" rule *)
+ (*    Separators and operators  also separate  other tokens *)
+ (*   "longest token rule":   x+=2;   has 4 tokens x   +=  2 ;*)
+
+int2x+3;   (* int2x + 3 ; *)
+
+2int,    (* illegal token *)
+
+(*  9) comment is not a token *)
+(* this is a comment *)

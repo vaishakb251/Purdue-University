@@ -1,0 +1,22 @@
+(* comments *)    s
+fun divide (float a, float b) = a / b;  (* fun divide ( float a , float b ) = a / b ; 
+if x >= y then 8 else 9 ; 
+
+bool isValid = true;  (* bool isValid = true ; 
+
+int result = 15; (* int result = 15 ; *)
+
+int length = 10l; (* int length = 10 ; *)
+
+long width = 3000L; (* long width = 3000L ; *)
+
+{
+double temp, humidity; (* double temp ,  humidity ; *)
+
+temp *= humidity; (* temp *= humidity ; *)
+}
+char symbol = "x"; 
+
+x * y = 20; (* x * y = 20 ; *)
+
+fun isLeapYear year = (year mod 4 = 0 andalso (year mod 100 <> 0 or else year mod 400 = 0)); 

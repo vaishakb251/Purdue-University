@@ -1,0 +1,22 @@
+(* comments *) 
+function subtract (int a, int b) = a - b;  (* fun subtract ( int a , int b ) = a - b ; 
+if x = y then 0 else 1 ; 
+
+bool isOpen = true;  (* bool isOpen = true ; 
+
+int total = 100; (* int total = 100 ; *)
+
+int age = 30l; (* int age = 30 ; *)
+
+long value = 5000L; (* long value = 5000L ; *)
+
+{
+float width, height; (* float width ,  height ; *)
+
+height -= width; (* height -= width ; *)
+}
+char grade = "B"; 
+
+i * j = 6; (* i * j = 6 ; *)
+
+fun isPrime n = (n > 1 andalso not (exists i. n mod i = 0)); 

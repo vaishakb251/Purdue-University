@@ -1,0 +1,30 @@
+(* Test file with various token examples *)
+
+(* Valid tokens *)
+int 1x = 5;
+double y = 3.14;
+long z = 42L;
+char c = "a";
+bool flag = true;
+
+(* Invalid integers *)
+int bad1 = 01;       (* leading zero *)
+int bad2 = _42;      (* starts with underscore *)
+int bad3 = 42_;      (* ends with underscore *)
+
+(* Invalid doubles *)
+double bad4 = 01.5;  (* leading zero *)
+double bad5 = 5.;    (* no digits after decimal *)
+
+(* Invalid identifiers *)
+int 1x = 10;         (* starts with a number *)
+
+(* Complex expressions *)
+if x > y then
+    x += 1
+else
+    y -= 2;
+
+fun calculate(int a, int b) = a * b + (a // b);
+
+bool isValid = (x == 5 andalso y != 0) orelse flag;

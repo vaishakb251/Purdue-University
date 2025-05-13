@@ -1,0 +1,22 @@
+(* comments *)    s
+fun multiply (int a, int b) = a * b;  (* fun multiply ( int a , int b ) = a * b ; 
+if x < y then 3 else 4 ; 
+
+bool isActive = true;  (* bool isActive = true ; 
+
+int num = 5; (* int num = 5 ; *)
+
+int age = 25l; (* int age = 25 ; *)
+
+long distance = 1000L; (* long distance = 1000L ; *)
+
+{
+float x, y; (* float x ,  y ; *)
+
+x += y; (* x += y ; *)
+}
+char letter = "c"; 
+
+i + j = 10; (* i + j = 10 ; *)
+
+fun isWeekend x = (x = Sa orelse x = Su); 

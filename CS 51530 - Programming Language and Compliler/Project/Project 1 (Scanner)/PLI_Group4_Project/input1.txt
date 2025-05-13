@@ -1,0 +1,15 @@
+int x = 10;
+double 1y = 20.5;
+bool flag = true;
+char c = "A";
+
+if (x > 5) {
+    y += 3.2;
+} else {
+    y -= 1.5;
+}
+
+// Comment Example
+fun add(int a, int b) {
+    return a + b;
+}
